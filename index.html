@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Netflix Clone</title>
+
+<head>
+    <script src="https://unpkg.com/vue@2"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="netflixstyle.css">
+</head>
+
+<body>
+    <app id="my-vue-app">
+
+        <div class="nameOfApp">Netflix</div>
+        <div class="containerNewMovies">
+            <div class="item">
+                <p>1</p>
+            </div>
+            <div class="item">
+                <p>2</p>
+            </div>
+            <div class="item">
+                <p>3</p>
+            </div>
+            <div class="item">
+                <p>4</p>
+            </div>
+            <div class="item">
+                <p>5</p>
+            </div>
+            <div class="item">
+                <p>6</p>
+            </div>
+            <div class="">
+                <p>7</p>
+            </div>
+            <div class="item">
+                <p>8</p>
+            </div>
+            <div class="item">
+                <p>9</p>
+            </div>
+            <div class="item">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="containerYourList">
+            <div class="item">
+                <p>1</p>
+            </div>
+            <div class="item">
+                <p>2</p>
+            </div>
+            <div class="item">
+                <p>3</p>
+            </div>
+            <div class="item">
+                <p>4</p>
+            </div>
+            <div class="item">
+                <p>5</p>
+            </div>
+            <div class="item">
+                <p>6</p>
+            </div>
+            <div class="item">
+                <p>7</p>
+            </div>
+            <div class="item">
+                <p>8</p>
+            </div>
+            <div class="item">
+                <p>9</p>
+            </div>
+            <div class="item">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="containerComingSoon">
+            <div class="item">
+                <p>1</p>
+            </div>
+            <div class="item">
+                <p>2</p>
+            </div>
+            <div class="item">
+                <p>3</p>
+            </div>
+            <div class="item">
+                <p>4</p>
+            </div>
+            <div class="item">
+                <p>5</p>
+            </div>
+            <div class="item">
+                <p>6</p>
+            </div>
+            <div class="item">
+                <p>7</p>
+            </div>
+            <div class="item">
+                <p>8</p>
+            </div>
+            <div class="item">
+                <p>9</p>
+            </div>
+            <div class="item">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="movie-list">
+            <movie-tile v-for="movie in movies" v-bind:title="movie.nameOfMovie"
+                v-bind:img="movie.coverArt"></movie-tile>
+        </div>
+
+    </app>
+</body>
+<script src="components/movie-tile.js"></script>
+<script src="netflix.js"></script>
+
+
+
+</html>

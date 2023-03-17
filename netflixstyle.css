@@ -1,0 +1,50 @@
+#my-vue-app {
+    background-color: antiquewhite;
+}
+
+.nameOfApp {
+    text-align: center;
+    font-family: 'roundy', sans-serif;
+    font-size: 150px;
+    color: red;
+    background-color: black;
+}
+
+.containerNewMovies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+    background-color: gray;
+}
+
+.containerYourList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+    background-color: gray;
+}
+
+.containerComingSoon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+    background-color: gray;
+}
+
+.item {
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    padding: 50px;
+}
+
+.movie-list {
+    border: 10px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
