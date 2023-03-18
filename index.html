@@ -11,108 +11,15 @@
     <link rel="stylesheet" href="netflixstyle.css">
 </head>
 
-<body>
-    <app id="my-vue-app">
+<body id="body">
+    <app id="myVueApp">
 
-        <div class="nameOfApp">Netflix</div>
+        <div class="nameOfApp">
+            <div class="logo"><img src="images/Logonetflix.png" width="270px" height="150px"></div>
+        </div>
+        <div class="newMovies">New Movies</div>
         <div class="containerNewMovies">
-            <div class="item">
-                <p>1</p>
-            </div>
-            <div class="item">
-                <p>2</p>
-            </div>
-            <div class="item">
-                <p>3</p>
-            </div>
-            <div class="item">
-                <p>4</p>
-            </div>
-            <div class="item">
-                <p>5</p>
-            </div>
-            <div class="item">
-                <p>6</p>
-            </div>
-            <div class="">
-                <p>7</p>
-            </div>
-            <div class="item">
-                <p>8</p>
-            </div>
-            <div class="item">
-                <p>9</p>
-            </div>
-            <div class="item">
-                <p>10</p>
-            </div>
-        </div>
-        <div class="containerYourList">
-            <div class="item">
-                <p>1</p>
-            </div>
-            <div class="item">
-                <p>2</p>
-            </div>
-            <div class="item">
-                <p>3</p>
-            </div>
-            <div class="item">
-                <p>4</p>
-            </div>
-            <div class="item">
-                <p>5</p>
-            </div>
-            <div class="item">
-                <p>6</p>
-            </div>
-            <div class="item">
-                <p>7</p>
-            </div>
-            <div class="item">
-                <p>8</p>
-            </div>
-            <div class="item">
-                <p>9</p>
-            </div>
-            <div class="item">
-                <p>10</p>
-            </div>
-        </div>
-        <div class="containerComingSoon">
-            <div class="item">
-                <p>1</p>
-            </div>
-            <div class="item">
-                <p>2</p>
-            </div>
-            <div class="item">
-                <p>3</p>
-            </div>
-            <div class="item">
-                <p>4</p>
-            </div>
-            <div class="item">
-                <p>5</p>
-            </div>
-            <div class="item">
-                <p>6</p>
-            </div>
-            <div class="item">
-                <p>7</p>
-            </div>
-            <div class="item">
-                <p>8</p>
-            </div>
-            <div class="item">
-                <p>9</p>
-            </div>
-            <div class="item">
-                <p>10</p>
-            </div>
-        </div>
-        <div class="movie-list">
-            <movie-tile v-for="movie in movies" v-bind:title="movie.nameOfMovie"
+            <movie-tile class="item" v-for="movie in movies" v-bind:title="movie.nameOfMovie"
                 v-bind:img="movie.coverArt"></movie-tile>
         </div>
 

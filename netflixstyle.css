@@ -1,12 +1,23 @@
-#my-vue-app {
+#body {
     background-color: antiquewhite;
 }
 
 .nameOfApp {
+    background-color: black;
+}
+
+.logo {
     text-align: center;
-    font-family: 'roundy', sans-serif;
-    font-size: 150px;
+}
+
+.newMovies {
     color: red;
+    font-size: 70px;
+    font-family: 'roundy', sans-serif;
+    text-align: center;
+    border-style: solid;
+    border-color: antiquewhite;
+    border-width: 20px;
     background-color: black;
 }
 
@@ -15,36 +26,20 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin: 50px;
-    background-color: gray;
-}
-
-.containerYourList {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 50px;
-    background-color: gray;
-}
-
-.containerComingSoon {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 50px;
-    background-color: gray;
 }
 
 .item {
     border-style: solid;
     border-color: black;
-    border-radius: 3px;
-    padding: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
 }
 
-.movie-list {
-    border: 10px;
-    border-style: solid;
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color: red;
 }
