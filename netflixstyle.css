@@ -22,10 +22,12 @@
 }
 
 .containerNewMovies {
+    width: 100px;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
 }
 
 .item {
@@ -38,8 +40,14 @@
 
 }
 
-.title {
+.name {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: xx-large;
     color: red;
+}
+
+.description {
+    text-align: center;
+    font-size: x-small;
+    font-family: Arial, Helvetica, sans-serif;
 }

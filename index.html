@@ -19,8 +19,9 @@
         </div>
         <div class="newMovies">New Movies</div>
         <div class="containerNewMovies">
-            <movie-tile class="item" v-for="movie in movies" v-bind:title="movie.nameOfMovie"
-                v-bind:img="movie.coverArt"></movie-tile>
+            <movie-tile class="item" v-for="movie in movies" v-bind:name="movie.name" v-bind:image="movie.image"
+                v-bind:description="movie.description"
+                v-bind:release_date="movie.release_date"></movie-tile>></movie-tile>
         </div>
 
     </app>
