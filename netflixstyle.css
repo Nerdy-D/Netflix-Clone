@@ -4,6 +4,7 @@
 
 .nameOfApp {
     background-color: black;
+    color: white;
 }
 
 .logo {
@@ -21,7 +22,7 @@
     background-color: black;
 }
 
-.containerNewMovie {
+.containerNewMovies {
     width: 10px;
     height: auto;
     display: flex;

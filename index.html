@@ -16,18 +16,18 @@
 
         <div class="nameOfApp">
             <div class="leftNav">
-                <nav class="nav"> <input type="text" v-model="name" />
-            </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
-                    class="nav_name">SignOut</span> </a>
-            </nav>
+                <!-- <nav class="nav"> <input type="text" v-model="name" /></nav> -->
+            </div>
+            <span>{{userName}}</span>
+            <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span>
+            </a>
+
         </div>
         <div class="logo"><img src="images/Logonetflix.png" width="270px" height="150px"></div>
-        </div>
         <div class="newMovies">New Movies</div>
         <div class="containerNewMovies">
             <movie-tile class="item" v-for="movie in movies" v-bind:name="movie.name" v-bind:image="movie.image"
-                v-bind:description="movie.description"
-                v-bind:release_date="movie.release_date"></movie-tile>></movie-tile>
+                v-bind:description="movie.description" v-bind:release_date="movie.release_date"></movie-tile>
         </div>
     </app>
 </body>
