@@ -15,7 +15,13 @@
     <app id="myVueApp">
 
         <div class="nameOfApp">
-            <div class="logo"><img src="images/Logonetflix.png" width="270px" height="150px"></div>
+            <div class="leftNav">
+                <nav class="nav"> <input type="text" v-model="name" />
+            </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+                    class="nav_name">SignOut</span> </a>
+            </nav>
+        </div>
+        <div class="logo"><img src="images/Logonetflix.png" width="270px" height="150px"></div>
         </div>
         <div class="newMovies">New Movies</div>
         <div class="containerNewMovies">
@@ -23,10 +29,6 @@
                 v-bind:description="movie.description"
                 v-bind:release_date="movie.release_date"></movie-tile>></movie-tile>
         </div>
-        <div class="leftNav" input type="text" v-model="name">
-
-        </div>
-
     </app>
 </body>
 <script src="components/movie-tile.js"></script>
