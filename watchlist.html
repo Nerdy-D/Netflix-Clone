@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Netflix Clone</title>
+<title>Netflix Watch List</title>
 
 <head>
     <script src="https://unpkg.com/vue@2"></script>
@@ -15,23 +15,25 @@
     <app id="myVueApp">
 
         <div class="nameOfApp">
-            <!-- <div class="leftNav">
-                <nav class="nav"> <input type="text" v-model="name" /></nav> </div> -->
             <span>{{userName}}</span>
             <a href=login.html><input type="button" value="Sign Out"></a>
-            <a href=watchlist.html><input type="button" value="Watch List"></a>
+            <a href=index.html><input type="button" value="Home"></a>
 
             <div class=" logo"><img src="images/Logonetflix.png" width="270px" height="150px">
             </div>
         </div>
-        <div class="moviesHeading">Movies</div>
-        <div class="movies">
-            <movie-tile class="item" v-for="movie in movies" v-bind:name="movie.name" v-bind:image="movie.image"
-                v-bind:description="movie.description" v-bind:release_date="movie.release_date"
-                v-bind:coming_soon="movie.coming_soon" v-bind:genre="movie.genre" v-bind:preview="movie.preview"
-                v-bind:id="movie.id">
-            </movie-tile>
+        <form class="searchBar">
+            <input type="search" name="search">
+            <button class="searchButton" type="submit">
+                <span>Search</span>
+            </button>
+        </form>
+        <div class="watchListName">
+            Watch List
         </div>
+        <div class="watchList">
+        </div>
+
     </app>
 </body>
 <script src="components/movie-tile.js"></script>

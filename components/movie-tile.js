@@ -1,5 +1,5 @@
 Vue.component('movie-tile', {
-    props: ['name', 'image', 'description', 'release_date'],
+    props: ['id', 'name', 'image', 'description', 'release_date', 'coming_soon', 'genre', 'preview'],
     template: `
     <div class="movie-tile">
     <img v-bind:src="image" width="200px">
@@ -7,6 +7,11 @@ Vue.component('movie-tile', {
     {{name}}
     </h3>
     <p class="description">{{description}}</p>
-    <h4>{{release_date}}</h4>
+    <p class="rdate">{{release_date}}</p>
+    <p class="coming_soon">{{coming_soon}}</p>
+    <p class="genre">{{genre}}</p>
+    <p class="id">{{id}}</p>
+    <a v-bind:href="preview"><input type="button" value="Preview"></a>
+    <a href><input type="button" value="Add To Watch List"></a>
     </div>`,
 });
