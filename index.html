@@ -24,14 +24,24 @@
             <div class=" logo"><img src="images/Logonetflix.png" width="270px" height="150px">
             </div>
         </div>
-        <div class="moviesHeading">Movies</div>
-        <div class="movies">
-            <movie-tile class="item" v-for="movie in movies" v-bind:name="movie.name" v-bind:image="movie.image"
-                v-bind:description="movie.description" v-bind:release_date="movie.release_date"
-                v-bind:coming_soon="movie.coming_soon" v-bind:genre="movie.genre" v-bind:preview="movie.preview"
-                v-bind:id="movie.id">
+        <div class="comingSoon">Coming Soon</div>
+        <div class="moviesSoon">
+            <movie-tile class="item" v-for="movie in comingSoonMovies" v-bind:name="movie.name"
+                v-bind:image="movie.image" v-bind:description="movie.description"
+                v-bind:release_date="movie.release_date" v-bind:comingSoon="movie.comingSoon" v-bind:genre="movie.genre"
+                v-bind:preview="movie.preview" v-bind:id="movie.id" v-bind:show-add="true"
+                v-on:add-to-watch-list="onAddToWatchlist(movie)">
             </movie-tile>
         </div>
+        <div class="newMovies">New Movies</div>
+        <div class="newNewMovies">
+            <movie-tile class="item" v-for="movie in movies" v-bind:name="movie.name" v-bind:image="movie.image"
+                v-bind:description="movie.description" v-bind:release_date="movie.release_date"
+                v-bind:comingSoon="movie.comingSoon" v-bind:genre="movie.genre" v-bind:preview="movie.preview"
+                v-bind:id="movie.id" v-bind:show-add="true" v-on:add-to-watch-list="onAddToWatchlist(movie)">
+            </movie-tile>
+        </div>
+
     </app>
 </body>
 <script src="components/movie-tile.js"></script>

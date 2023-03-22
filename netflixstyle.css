@@ -14,7 +14,7 @@
     background-color: black;
 }
 
-.moviesHeading {
+.comingSoon {
     margin-top: 50px;
     color: red;
     font-size: 70px;
@@ -23,7 +23,22 @@
 
 }
 
-.movies {
+.moviesSoon {
+    display: flex;
+    width: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.newMovies {
+    margin-top: 50px;
+    color: red;
+    font-size: 70px;
+    font-family: 'roundy', sans-serif;
+    text-align: center;
+}
+
+.newNewMovies {
     display: flex;
     width: 400px;
     margin-left: 100px;
@@ -105,17 +120,16 @@
     text-align: center;
 }
 
-.watchList {
-    border-style: solid;
-    border-color: red;
-    margin-left: 300px;
-    margin-right: 300px;
-
-}
-
 .watchListName {
     text-align: center;
     font-size: 100px;
     font-family: 'roundy', sans-serif;
     color: red;
+}
+
+.watchList {
+    display: flex;
+    width: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
 }

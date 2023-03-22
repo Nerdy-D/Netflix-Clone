@@ -1,5 +1,5 @@
 Vue.component('movie-tile', {
-    props: ['id', 'name', 'image', 'description', 'release_date', 'coming_soon', 'genre', 'preview'],
+    props: ['id', 'name', 'image', 'description', 'release_date', 'coming_soon', 'genre', 'preview', 'show-add', 'show-remove'],
     template: `
     <div class="movie-tile">
     <img v-bind:src="image" width="200px">
@@ -12,6 +12,7 @@ Vue.component('movie-tile', {
     <p class="genre">{{genre}}</p>
     <p class="id">{{id}}</p>
     <a v-bind:href="preview"><input type="button" value="Preview"></a>
-    <a href><input type="button" value="Add To Watch List"></a>
+    <button v-if="showAdd" v-on:click="$emit('add-to-watch-list')">Add</button>
+    <button v-if="showRemove" v-on:click="$emit('remove-from-watch-list')">Remove</button>
     </div>`,
 });
