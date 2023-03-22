@@ -40,7 +40,7 @@
 
 .newNewMovies {
     display: flex;
-    width: 400px;
+    width: auto;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -53,7 +53,7 @@
     background-image: url("images/movietilebackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    height: 100%;
 }
 
 
@@ -125,11 +125,4 @@
     font-size: 100px;
     font-family: 'roundy', sans-serif;
     color: red;
-}
-
-.watchList {
-    display: flex;
-    width: 400px;
-    margin-left: 100px;
-    margin-right: 100px;
 }

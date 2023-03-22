@@ -32,16 +32,15 @@
             Watch List
         </div>
         <div class="watchList">
-            <movie-tile class="item" v-for="movie in watchlist" v-bind:name="movie.name" v-bind:image="movie.image"
-                v-bind:description="movie.description" v-bind:release_date="movie.release_date"
-                v-bind:comingSoon="movie.comingSoon" v-bind:genre="movie.genre" v-bind:preview="movie.preview"
-                v-bind:id="movie.id" v-bind:show-remove="true" v-on:remove-from-watch-list="onRemoveItem(movie)">
-            </movie-tile>
+            <movie-tile class="item" v-for="movie in watchlist" v-bind:name="movie.name" v-bind:img="movie.image"
+                v-bind:show-remove="true" v-on:remove-from-watch-list="onRemoveItem(movie)"></movie-tile>
         </div>
 
     </app>
 </body>
-<script src="watchlist.js"></script>
 
+<script src="components/movie-tile.js"></script>
+<script src="watchlist_vue.js"></script>
+<script src="netflix.js"></script>
 
 </html>
