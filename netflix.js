@@ -210,10 +210,8 @@ var app = new Vue({
     methods: {
         onAddToWatchlist: function (movie) {
 
-            this.watchlist.push(movie);
-
-
-            const jsonWatchlist = JSON.stringify(this.watchlist);
+            this.watchList.push(movie);
+            const jsonWatchlist = JSON.stringify(this.watchList);
             localStorage.setItem('watchlistMovies', jsonWatchlist);
         },
     },
