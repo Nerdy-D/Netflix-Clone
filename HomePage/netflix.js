@@ -7,7 +7,7 @@ var app = new Vue({
                 id: "50_First_Dates",
                 name: "50 First Dates",
                 image: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs1e2GnJ1cYFTBD9lIHPKF0idkYpkS4GMgJci0HNTpS3ksC_V_',
-                description: "It follows the story of Henry, a womanizing marine veterinarian who falls for an art teacher named Lucy. When he discovers she has amnesia, and forgets him when she falls asleep, he resolves to win her over again each new day.",
+                description: "It follows the story of Henry",
                 releaseDate: "13 February 2004",
                 comingSoon: true,
                 genre: "Romance",
@@ -193,7 +193,7 @@ var app = new Vue({
 
 
         ],
-        watchList: [],
+        watchlist: [],
 
 
     },
@@ -205,13 +205,17 @@ var app = new Vue({
     },
     created: function () {
         this.userName = localStorage.getItem('username');
+
+        const jsonWatchlist = localStorage.getItem('watchlistMovies');
+        console.log(jsonWatchlist);
+        if (jsonWatchlist) this.watchlist = JSON.parse(jsonWatchlist);
     },
 
     methods: {
         onAddToWatchlist: function (movie) {
 
-            this.watchList.push(movie);
-            const jsonWatchlist = JSON.stringify(this.watchList);
+            this.watchlist.push(movie);
+            const jsonWatchlist = JSON.stringify(this.watchlist);
             localStorage.setItem('watchlistMovies', jsonWatchlist);
         },
     },

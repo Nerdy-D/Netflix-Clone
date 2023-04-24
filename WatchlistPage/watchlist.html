@@ -8,18 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="netflixstyle.css">
+    <link rel="stylesheet" href="../WatchlistPage/netflixstyle.css">
 </head>
 
 <body id="body">
-    <app id="myVueApp">
+    <div id="myVueApp">
 
         <div class="nameOfApp">
             <span>{{userName}}</span>
-            <a href=login.html><input type="button" value="Sign Out"></a>
-            <a href=index.html><input type="button" value="Home"></a>
+            <a href="../LoginPage/login.html"><input type="button" value="Sign Out"></a>
+            <a href="../HomePage/index.html"><input type="button" value="Home"></a>
+            <a v-if="watchlist.length">Watchlist Total: {{watchlist.length}}</a>
 
-            <div class=" logo"><img src="images/Logonetflix.png" width="270px" height="150px">
+            <div class=" logo"><img src="../images/Logonetflix.png" width="270px" height="150px">
             </div>
         </div>
         <form class="searchBar">
@@ -32,15 +33,16 @@
             Watch List
         </div>
         <div class="watchList">
-            <movie-tile class="item" v-for="movie in watchlist" v-bind:name="movie.name" v-bind:img="movie.image"
+            <movie-tile class="item" v-for="movie in watchlist" v-bind:name="movie.name" v-bind:image="movie.image"
                 v-bind:show-remove="true" v-on:remove-from-watch-list="onRemoveItem(movie)"></movie-tile>
         </div>
 
-    </app>
+    </div>
 </body>
 
-<script src="components/movie-tile.js"></script>
-<script src="watchlist_vue.js"></script>
-<script src="netflix.js"></script>
+<script src="../Components/movie-tile.js"></script>
+<script src="../WatchlistPage/watchlist_vue.js"></script>
+
+
 
 </html>

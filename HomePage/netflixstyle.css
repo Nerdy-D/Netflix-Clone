@@ -1,5 +1,5 @@
 #body {
-    background-image: url("images/mainbackdrop.jpg");
+    background-image: url("../Images/mainbackdrop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -25,7 +25,9 @@
 
 .moviesSoon {
     display: flex;
-    width: 400px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -40,7 +42,8 @@
 
 .newNewMovies {
     display: flex;
-    width: auto;
+    flex-direction: row;
+    overflow-x: scroll;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -50,7 +53,7 @@
     display: flex;
     border-color: aqua;
     flex-direction: column;
-    background-image: url("images/movietilebackground.jpg");
+    background-image: url("../Images/movietilebackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -103,7 +106,7 @@
 }
 
 .body {
-    background-image: url("images/movies.jpg");
+    background-image: url("../Images/movies.jpg");
 }
 
 .loginForm {
@@ -125,4 +128,17 @@
     font-size: 100px;
     font-family: 'roundy', sans-serif;
     color: red;
+}
+
+.watchList {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.movie-tile {
+    height: auto;
+    width: auto;
 }

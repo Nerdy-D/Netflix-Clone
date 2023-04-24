@@ -1,0 +1,144 @@
+#body {
+    background-image: url("../Images/mainbackdrop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nameOfApp {
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+    background-color: black;
+}
+
+.comingSoon {
+    margin-top: 50px;
+    color: red;
+    font-size: 70px;
+    font-family: 'roundy', sans-serif;
+    text-align: center;
+
+}
+
+.moviesSoon {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.newMovies {
+    margin-top: 50px;
+    color: red;
+    font-size: 70px;
+    font-family: 'roundy', sans-serif;
+    text-align: center;
+}
+
+.newNewMovies {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.item {
+    border-style: solid;
+    display: flex;
+    border-color: aqua;
+    flex-direction: column;
+    background-image: url("../Images/movietilebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color: red;
+    text-align: center;
+}
+
+.description {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    color: white;
+}
+
+.rdate {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.id {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-small;
+}
+
+.coming_soon {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+
+.genre {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.preview {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.body {
+    background-image: url("../Images/movies.jpg");
+}
+
+.loginForm {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    color: white;
+    border-style: outset;
+    border-color: red;
+    background-color: black;
+}
+
+.searchBar {
+    text-align: center;
+}
+
+.watchListName {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'roundy', sans-serif;
+    color: red;
+}
+
+.watchList {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.movie-tile {
+    height: auto;
+    width: auto;
+}

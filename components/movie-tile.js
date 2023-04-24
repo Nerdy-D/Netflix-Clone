@@ -2,7 +2,7 @@ Vue.component('movie-tile', {
     props: ['id', 'name', 'image', 'description', 'release_date', 'coming_soon', 'genre', 'preview', 'show-add', 'show-remove'],
     template: `
     <div class="movie-tile">
-    <img v-bind:src="image" width="250px">
+    <img v-bind:src="image" width="350px" height="350px">
     <h3 class="name">
     {{name}}
     </h3>
