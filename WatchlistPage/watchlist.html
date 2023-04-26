@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../WatchlistPage/netflixstyle.css">
+    <link rel="stylesheet" href="../Stylesheet/netflixstyle.css">
 </head>
 
 <body id="body">
@@ -34,14 +34,15 @@
         </div>
         <div class="watchList">
             <movie-tile class="item" v-for="movie in watchlist" v-bind:name="movie.name" v-bind:image="movie.image"
-                v-bind:show-remove="true" v-on:remove-from-watch-list="onRemoveItem(movie)"></movie-tile>
+                v-bind:description="movie.description" v-bind:show-remove="true"
+                v-on:remove-from-watch-list="onRemoveItem(movie)"></movie-tile>
         </div>
 
     </div>
 </body>
 
-<script src="../Components/movie-tile.js"></script>
-<script src="../WatchlistPage/watchlist_vue.js"></script>
+<script src="../Components/movietile.js"></script>
+<script src="../WatchlistPage/watchlistvue.js"></script>
 
 
 

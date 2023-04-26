@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../HomePage/netflixstyle.css">
+    <link rel="stylesheet" href="../Stylesheet/netflixstyle.css">
 </head>
 
 <body id="body">
@@ -25,22 +25,22 @@
         <div class="comingSoon">Coming Soon</div>
         <div class="moviesSoon">
             <movie-tile class="item" v-for="movie in comingSoonMovies" v-bind:name="movie.name"
-                v-bind:image="movie.image" v-bind:description="movie.description" v-bind:releaseDate="movie.releaseDate"
-                v-bind:comingSoon="movie.comingSoon" v-bind:genre="movie.genre" v-bind:preview="movie.preview"
-                v-bind:id="movie.id" v-bind:show-add="true" v-on:add-to-watch-list="onAddToWatchlist(movie)">
+                v-bind:image="movie.image" v-bind:description="movie.description" v-bind:released="movie.released"
+                v-bind:genre="movie.genre" v-bind:preview="movie.preview" v-bind:id="movie.id" v-bind:show-add="true"
+                v-on:add-to-watch-list="onAddToWatchlist(movie)">
             </movie-tile>
         </div>
         <div class="newMovies">New Movies</div>
         <div class="newNewMovies">
             <movie-tile class="item" v-for="movie in movies" v-bind:name="movie.name" v-bind:image="movie.image"
-                v-bind:description="movie.description" v-bind:releaseDate="movie.releaseDate"
-                v-bind:comingSoon="movie.comingSoon" v-bind:genre="movie.genre" v-bind:preview="movie.preview"
-                v-bind:id="movie.id" v-bind:show-add="true" v-on:add-to-watch-list="onAddToWatchlist(movie)">
+                v-bind:description="movie.description" v-bind:released="movie.released" v-bind:genre="movie.genre"
+                v-bind:preview="movie.preview" v-bind:id="movie.id" v-bind:show-add="true"
+                v-on:add-to-watch-list="onAddToWatchlist(movie)">
             </movie-tile>
         </div>
     </app>
 </body>
-<script src="../Components/movie-tile.js"></script>
+<script src="../Components/movietile.js"></script>
 <script src="../HomePage/netflix.js"></script>
 
 
