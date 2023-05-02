@@ -1,5 +1,5 @@
 #body {
-    background-image: url("../Images/mainbackdrop.jpg");
+    background-image: url("../Images/mainBackDrop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0%;
@@ -55,7 +55,7 @@
     border-color: aqua;
     display: flex;
     flex-direction: column;
-    background-image: url("../Images/movietilebackground.jpg");
+    background-image: url("../Images/movieTileBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
